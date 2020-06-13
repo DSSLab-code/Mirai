@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mirai Iot BotNet by 0Days
 
 #### What is Mirai Iot ?
@@ -126,3 +127,6 @@ The [zip file](https://www.virustotal.com/en/file/f10667215040e87dae62dd48a5405b
 
 
 #### *Sincerely , Screamfox AB member
+=======
+# Mirai
+>>>>>>> 85f86dd90e20a9d03cb23c2af017291d0c98e7fe

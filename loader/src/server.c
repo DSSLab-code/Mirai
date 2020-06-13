@@ -9,6 +9,8 @@
 #include <string.h>
 #include <sched.h>
 #include <errno.h>
+#include <unistd.h>
+#include <time.h>
 #include "headers/includes.h"
 #include "headers/server.h"
 #include "headers/telnet_info.h"

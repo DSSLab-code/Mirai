@@ -4,6 +4,9 @@
 #include <string.h>
 #include <time.h>
 #include <pthread.h>
+#include <fcntl.h> // for open
+#include <unistd.h> // for close
+#include <arpa/inet.h> // for ntohs
 #include "headers/includes.h"
 #include "headers/connection.h"
 #include "headers/server.h"
